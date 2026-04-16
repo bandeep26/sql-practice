@@ -1,11 +1,10 @@
-Daily SQL practice with structured queries, notes, and progress tracking.
-# 📊 SQL Practice Repository
+# SQL Practice Repository
 
 Welcome to my SQL practice repository. This repo documents my journey of learning and mastering SQL through structured practice, covering concepts, queries, and mistake tracking.
 
 ---
 
-## 📁 Folder Structure (Per Topic)
+## Folder Structure (Per Topic)
 
 Each topic follows a consistent structure:
 
@@ -18,7 +17,7 @@ TopicName/
 
 ---
 
-## 🧠 Learning Approach
+## Learning Approach
 
 For every topic, I follow a structured method:
 
@@ -35,7 +34,7 @@ Prepare effectively for interviews
 
 ---
 
-## 📚 Topics Covered
+## Topics Covered
 
 ### 🔹 DQL (Data Query Language)
 
