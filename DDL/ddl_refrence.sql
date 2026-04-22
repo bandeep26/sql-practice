@@ -33,5 +33,5 @@ city VARCHAR(50)
 -- 5. TRUNCATE removes data efficiently without affecting structure
 
 -- ============================================
--- END OF QUESTIONS
+-- END OF NOTES
 -- ============================================
