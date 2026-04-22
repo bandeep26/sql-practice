@@ -27,9 +27,9 @@ Mistake Tracking → Logged in `_mistakes.sql`
 
 This approach helps me:
 
-Strengthen fundamentals
-Improve problem-solving speed
-Avoid repeating mistakes
+Strengthen fundamentals,
+Improve problem-solving speed,
+Avoid repeating mistakes &
 Prepare effectively for interviews
 
 ---
