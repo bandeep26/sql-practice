@@ -31,5 +31,5 @@ city VARCHAR(50)
 -- 4. SELECT helps in data analysis and retrieval
 
 -- ============================================
--- END OF QUESTIONS
+-- END OF NOTES
 -- ============================================
