@@ -1,5 +1,5 @@
 -- ============================================
--- 📌 SQL MISTAKES FILE (FULL ANTI JOIN, CROSS JOIN)
+-- 📌 SQL MISTAKES FILE (FULL ANTI JOIN, CROSS JOIN, MULTIPLE JOINS)
 -- ============================================
 
 -- 🗂️ TABLE: Employees
@@ -18,12 +18,19 @@ dept_id INT PRIMARY KEY,
 dept_name VARCHAR(50)
 );
 
+-- 🗂️ TABLE: Locations
+
+CREATE TABLE Locations (
+dept_id INT,
+city VARCHAR(50)
+);
+
 -- ============================================
 -- ❌ COMMON MISTAKES + CORRECTIONS
 -- ============================================
 
 -- Mistake 1
--- ❌ Wrong NULL side in FULL ANTI JOIN
+-- ❌ Wrong NULL-side in FULL ANTI JOIN
 WHERE e.dept_id IS NULL;
 
 -- ✅ Correct
@@ -32,7 +39,7 @@ WHERE d.dept_id IS NULL;
 --------------------------------------------------
 
 -- Mistake 2
--- ❌ Using wrong column for NULL check
+-- ❌ Using wrong columns for NULL check
 WHERE e.name IS NULL OR d.dept_name IS NULL;
 
 -- ✅ Correct
@@ -50,16 +57,7 @@ COALESCE(e.name, 'No Employee') AS name;
 --------------------------------------------------
 
 -- Mistake 4
--- ❌ Using 'Null' instead of NULL
-COALESCE('Null', 'No Employee');
-
--- ✅ Correct
-COALESCE(e.name, 'No Employee');
-
---------------------------------------------------
-
--- Mistake 5
--- ❌ Missing JOIN condition in FULL JOIN
+-- ❌ Missing JOIN condition
 SELECT *
 FROM employees
 FULL JOIN departments;
@@ -69,8 +67,24 @@ ON employees.dept_id = departments.dept_id;
 
 --------------------------------------------------
 
+-- Mistake 5
+-- ❌ Wrong JOIN order with WHERE
+FROM employees e
+LEFT JOIN departments d
+WHERE d.dept_id IS NULL
+INNER JOIN locations l;
+
+-- ✅ Correct
+FROM employees e
+LEFT JOIN departments d
+ON e.dept_id = d.dept_id
+INNER JOIN locations l
+ON e.dept_id = l.dept_id;
+
+--------------------------------------------------
+
 -- Mistake 6
--- ❌ Confusing CROSS JOIN with INNER JOIN
+-- ❌ Using INNER JOIN instead of CROSS JOIN
 SELECT *
 FROM employees e
 INNER JOIN departments d;
@@ -83,7 +97,7 @@ CROSS JOIN departments;
 --------------------------------------------------
 
 -- Mistake 7
--- ❌ Using = instead of LIKE for patterns
+-- ❌ Pattern matching without LIKE
 WHERE name = A%;
 
 -- ✅ Correct
@@ -92,11 +106,11 @@ WHERE name LIKE 'A%';
 --------------------------------------------------
 
 -- Mistake 8
--- ❌ Missing quotes in pattern
-WHERE name LIKE A%;
+-- ❌ Wrong join columns in multiple joins
+ON e.dept_name = d.dept_name;
 
 -- ✅ Correct
-WHERE name LIKE 'A%';
+ON e.dept_id = d.dept_id;
 
 --------------------------------------------------
 
@@ -105,11 +119,11 @@ WHERE name LIKE 'A%';
 -- ============================================
 
 -- Focus Areas:
--- 1. Correct NULL-side logic in FULL ANTI JOIN
--- 2. Proper use of COALESCE
--- 3. Correct JOIN syntax
--- 4. Understanding CROSS JOIN behavior
--- 5. Pattern matching syntax
+-- 1. Correct NULL filtering logic
+-- 2. Proper JOIN conditions
+-- 3. Correct JOIN type selection
+-- 4. Syntax accuracy (COALESCE, LIKE)
+-- 5. Managing multiple joins correctly
 
 -- ============================================
 -- END OF FILE
