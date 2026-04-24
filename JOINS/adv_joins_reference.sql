@@ -1,5 +1,5 @@
 -- ============================================
--- 📌 SQL PRACTICE QUESTIONS (FULL ANTI JOIN, CROSS JOIN)
+-- 📌 SQL PRACTICE QUESTIONS (FULL ANTI JOIN, CROSS JOIN, MULTIPLE JOINS)
 -- ============================================
 
 -- 🗂️ TABLE: Employees
@@ -18,25 +18,34 @@ dept_id INT PRIMARY KEY,
 dept_name VARCHAR(50)
 );
 
+-- 🗂️ TABLE: Locations
+
+CREATE TABLE Locations (
+dept_id INT,
+city VARCHAR(50)
+);
+
 -- ============================================
 -- 📊 SUMMARY
 -- ============================================
 
--- Total Questions Practiced: 10
+-- Total Questions Practiced: 15
 
 -- Topics Covered:
--- FULL ANTI JOIN logic
--- CROSS JOIN (Cartesian product)
--- NULL filtering in FULL JOIN
+-- FULL ANTI JOIN
+-- CROSS JOIN
+-- Joining multiple tables
+-- NULL filtering logic
 -- COALESCE usage
--- Pattern filtering with CROSS JOIN
+-- Mixed JOIN strategies
 
 -- Key Learnings:
--- 1. FULL ANTI JOIN returns non-matching rows from both tables
--- 2. NULL checks determine unmatched rows
--- 3. CROSS JOIN returns all possible combinations
--- 4. Filtering after CROSS JOIN reduces combinations
--- 5. COALESCE replaces NULL values effectively
+-- 1. FULL ANTI JOIN isolates non-matching rows using NULL conditions
+-- 2. CROSS JOIN generates Cartesian products
+-- 3. Multiple JOINs require proper ON conditions for each table
+-- 4. LEFT and INNER JOIN combinations control result sets
+-- 5. NULL checks determine inclusion/exclusion logic
+-- 6. COALESCE replaces NULL values effectively
 
 -- ============================================
 -- END OF NOTES
