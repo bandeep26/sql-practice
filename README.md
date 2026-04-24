@@ -34,50 +34,40 @@ Prepare effectively for interviews
 
 ---
 
-## Topics Covered
-
-### 🔹 DQL (Data Query Language)
-
-* SELECT, FROM, WHERE
-* ORDER BY (ASC, DESC, multiple columns)
-* DISTINCT
-* GROUP BY
-* HAVING
-* Aggregate Functions (SUM, COUNT, AVG)
-* TOP
-
-###🔹 **DDL (Data Definition Language)**
-
-*CREATE TABLE
-*ALTER TABLE
-*DROP TABLE
-*TRUNCATE
-
-###🔹 **DML (Data Manipulation Language)**
-
-*INSERT
-*UPDATE
-*DELETE
-
-###🔹 **Filtering (DQL Practice)**
-
-*WHERE clause
-*Comparison operators
-*AND, OR, NOT
-*IN
-*BETWEEN
-*LIKE
-*IS NULL / IS NOT NULL
-*ORDER BY
-
-###🔹 **Joins**
-
-*INNER JOIN
-*LEFT JOIN
-*FULL JOIN
-*FULL ANTI JOIN (NULL filtering logic)
-*CROSS JOIN
-*Multiple Table Joins
+Topics Covered
+🔹 DQL (Data Query Language)
+SELECT, FROM, WHERE
+ORDER BY (ASC, DESC, multiple columns)
+DISTINCT
+GROUP BY
+HAVING
+Aggregate Functions (SUM, COUNT, AVG)
+TOP
+🔹 DDL (Data Definition Language)
+CREATE TABLE
+ALTER TABLE
+DROP TABLE
+TRUNCATE
+🔹 DML (Data Manipulation Language)
+INSERT
+UPDATE
+DELETE
+🔹 Filtering (DQL Practice)
+WHERE clause
+Comparison operators
+AND, OR, NOT
+IN
+BETWEEN
+LIKE
+IS NULL / IS NOT NULL
+ORDER BY
+🔹 Joins
+INNER JOIN
+LEFT JOIN
+FULL JOIN
+FULL ANTI JOIN (NULL filtering logic)
+CROSS JOIN
+Multiple Table Joins
 
 *(More topics will be added as I progress)*
 
