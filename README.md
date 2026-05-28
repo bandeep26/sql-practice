@@ -79,6 +79,60 @@ Prepare effectively for interviews
 * CROSS JOIN
 * Multiple Table Joins
 
+### 🔹 SET Operators
+
+- UNION
+- UNION ALL
+- EXCEPT
+- INTERSECT
+
+
+### 🔹 Functions (NULL)
+
+- IS NULL
+- IS NOT NULL
+- COALESCE()
+- NULLIF()
+- ISNULL()
+
+
+### 🔹 Functions (String)
+
+- CONCAT()
+- UPPER()
+- LOWER()
+- TRIM()
+- REPLACE()
+- LEN()
+- LEFT()
+- RIGHT()
+- SUBSTRING()
+
+
+### 🔹 Functions (Date & Time)
+
+- DAY()
+- MONTH()
+- YEAR()
+- DATEPART()
+- DATENAME()
+- DATETRUNC()
+- EOMONTH()
+- DATEADD()
+- DATEDIFF()
+- ISDATE()
+- FORMAT()
+- CONVERT()
+- CAST()
+
+
+### 🔹 CASE Statements
+
+- CASE for Categorization
+- CASE for Mapping Values
+- CASE for NULL Handling
+- CASE with Conditional Aggregation
+
 *(More topics will be added as I progress)*
 
 ---
