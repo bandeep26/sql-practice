@@ -33,11 +33,6 @@ Avoid repeating mistakes &
 Prepare effectively for interviews
 
 ---
-Yeah — that’s because GitHub rendered your text as a **single paragraph**, not proper markdown lists.
-
-You need **line breaks + spacing** exactly like this. Copy-paste this **as-is** 👇
-
----
 
 ## Topics Covered
 
