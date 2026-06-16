@@ -133,7 +133,47 @@ Prepare effectively for interviews
 - CASE for NULL Handling
 - CASE with Conditional Aggregation
 
-*(More topics will be added as I progress)*
+### 🔹 Window Functions
+
+* OVER()
+
+* PARTITION BY
+
+* ORDER BY in Window Functions
+
+* Ranking Functions
+
+  * ROW_NUMBER()
+  * RANK()
+  * DENSE_RANK()
+  * NTILE()
+  * CUME_DIST()
+  * PERCENT_RANK()
+
+
+* Value Functions
+
+  * LEAD()
+  * LAG()
+  * FIRST_VALUE()
+  * LAST_VALUE()
+
+* Window Aggregate Functions
+
+  * SUM()
+  * AVG()
+  * COUNT()
+  * MIN()
+  * MAX()
+
+### 🔹 Subquery
+
+* Single Row Subquery
+* Multiple Row Subquery
+* Subquery in FROM
+* Subquery in SELECT
+* Subquery in JOIN
+* Subquery in WHERE
 
 ---
 
